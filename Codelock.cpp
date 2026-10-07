@@ -5,9 +5,9 @@ Codelock::Codelock(std::string secretCode): code(secretCode), unlocked(false) {
 
 }
 
-/*Codelock::~Codelock() {
+Codelock::~Codelock() {
     std::cout << "Codelock has been locked with a new code." << std::endl;
-} */
+} 
 
 bool Codelock::isUnlocked() const {
     return unlocked;

@@ -1,5 +1,6 @@
 #include <iostream>
 #include "Codelock.h"
+#include "GameSession.h"
 #include <string>
 
 void openCopy(Codelock lock){
@@ -25,5 +26,8 @@ int main() {
     openCopy(cabinetLock);
     std::cout << cabinetLock.isUnlocked() << '\n'; // Output: false
     openActual(cabinetLock);
-    std::cout << cabinetLock.isUnlocked() << '\n'; // Output: true
+    std::cout << cabinetLock.isUnlocked() << '\n'; // Output: true 
+
+    GameSession session1;
+    std::cout<< session1.getActiveSessions() << std::endl;
 }
